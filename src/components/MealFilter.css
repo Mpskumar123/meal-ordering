@@ -1,0 +1,97 @@
+/* 
+
+.meal-filter-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(248, 246, 246, 0.1);
+  margin: 20px; 
+  width: 50%;
+  height:25%;
+  border-style: solid;
+  border-color: aliceblue;
+}
+
+.mealsbutton {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 150px;
+  width: 100px;
+    height: 50px;
+    border-style: solid;
+ 
+} 
+
+
+.meal-filter-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(248, 246, 246, 0.1);
+    margin: 20px; 
+    width: 50%;
+    height: 25%;
+    border-style: solid;
+    border-color: aliceblue;
+  }
+  
+  .mealsbutton {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px 20px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .mealsbutton:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .mealsbutton.clicked {
+    border-color: #334a68;
+  }
+   
+
+
+   */
+
+   .meal-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .meals-button {
+    border-radius: 30px; /* Adjust the value to control the roundness */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  }
+  .meals-button.MuiButton-contained {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  .meals-button.MuiButton-outlined {
+    background-color: #f9f9f9;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+  
+  .meals-button.MuiButton-outlined:hover {
+    background-color: #e0e0e0;
+    border-color: #000;
+  }
+  
+  .meals-button.MuiButton-contained:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  

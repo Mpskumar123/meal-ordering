@@ -1,0 +1,219 @@
+{
+    "labels": [
+    {"id": "All", "label": "All"},
+      {"id": "pork", "label": "Pork"},
+      {"id": "seafood", "label": "Seafood"},
+      {"id": "kids", "label": "Kids"},
+      {"id": "chicken", "label": "Chicken"},
+      {"id": "beef", "label": "Beef"},
+      {"id": "vegetarian", "label": "Vegetarian"},
+      {"id": "breakfast", "label": "Breakfast"}
+    ],
+    "meals": [
+      {
+        "id": "meal1",
+        "title": "3 course chicken",
+        "starter": "Lorem Ipsum",
+        "desert": "Cake",
+        "price": 9.99,
+        "labels": ["chicken", "breakfast"],
+        "img": "https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg",
+       "drinks": [
+    {
+      "id": "drink-1",
+      "title": "Beer",
+      "price": 4.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsbppPfSSYPlULOd2cc-TlL0DsrixKy_CSK6m6RHyaqV71xPRcs6tSrQT_4BJxc0ADf0&usqp=CAU"
+    },
+    {
+      "id": "drink-2",
+      "title": "Juice",
+      "price": 5.99,
+      "image": "https://5.imimg.com/data5/JJ/TS/EK/SELLER-61942504/juice-glass.jpg"
+    },
+    {
+      "id": "drink-3",
+      "title": "Vine",
+      "price": 6.99,
+      "image": "https://specials-images.forbesimg.com/imageserve/5d151369142c500008c78029/Zalto-Denk-Art-Bordeaux-Wine-Glass/960x0.jpg?fit=scale"
+    }
+  ]
+      },
+      {
+        "id": "meal2",
+        "title": "3 course Beef",
+        "starter": "Lorem Ipsum",
+        "desert": "Cake",
+        "price": 19.99,
+        "labels": ["beef"],
+        "img": "https://norecipes.com/wp-content/uploads/2017/11/black-pepper-beef-003.jpg",
+        "drinks": [
+    {
+      "id": "drink-1",
+      "title": "Beer",
+      "price": 4.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsbppPfSSYPlULOd2cc-TlL0DsrixKy_CSK6m6RHyaqV71xPRcs6tSrQT_4BJxc0ADf0&usqp=CAU"
+    },
+    {
+      "id": "drink-2",
+      "title": "Juice",
+      "price": 5.99,
+      "image": "https://5.imimg.com/data5/JJ/TS/EK/SELLER-61942504/juice-glass.jpg"
+    },
+    {
+      "id": "drink-3",
+      "title": "Vine",
+      "price": 6.99,
+      "image": "https://specials-images.forbesimg.com/imageserve/5d151369142c500008c78029/Zalto-Denk-Art-Bordeaux-Wine-Glass/960x0.jpg?fit=scale"
+    }
+  ]
+      },
+      {
+        "id": "meal3",
+        "title": "3 course Vegetarian",
+        "starter": "Lorem Ipsum",
+        "desert": "Cake",
+        "price": 79.99,
+        "labels": ["vegetarian"],
+        "img": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/8/1/0/FNK_KUNG-PAO-CAULIFLOWER-H_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1533148371584.jpeg",
+        "drinks": [
+    {
+      "id": "drink-1",
+      "title": "Beer",
+      "price": 4.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsbppPfSSYPlULOd2cc-TlL0DsrixKy_CSK6m6RHyaqV71xPRcs6tSrQT_4BJxc0ADf0&usqp=CAU"
+    },
+    {
+      "id": "drink-2",
+      "title": "Juice",
+      "price": 5.99,
+      "image": "https://5.imimg.com/data5/JJ/TS/EK/SELLER-61942504/juice-glass.jpg"
+    },
+    {
+      "id": "drink-3",
+      "title": "Vine",
+      "price": 6.99,
+      "image": "https://specials-images.forbesimg.com/imageserve/5d151369142c500008c78029/Zalto-Denk-Art-Bordeaux-Wine-Glass/960x0.jpg?fit=scale"
+    }
+  ]
+      },
+      {
+        "id": "meal4",
+        "title": "3 course Seafood",
+        "starter": "Lorem Ipsum",
+        "desert": "Cake",
+        "price": 49.99,
+        "labels": ["seafood"],
+        "img": "https://cre8athome.com/wp-content/uploads/2021/12/sauteed-seafood-medley-featured-recipe-1.jpg",
+       "drinks": [
+    {
+      "id": "drink-1",
+      "title": "Beer",
+      "price": 4.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsbppPfSSYPlULOd2cc-TlL0DsrixKy_CSK6m6RHyaqV71xPRcs6tSrQT_4BJxc0ADf0&usqp=CAU"
+    },
+    {
+      "id": "drink-2",
+      "title": "Juice",
+      "price": 5.99,
+      "image": "https://5.imimg.com/data5/JJ/TS/EK/SELLER-61942504/juice-glass.jpg"
+    },
+    {
+      "id": "drink-3",
+      "title": "Vine",
+      "price": 6.99,
+      "image": "https://specials-images.forbesimg.com/imageserve/5d151369142c500008c78029/Zalto-Denk-Art-Bordeaux-Wine-Glass/960x0.jpg?fit=scale"
+    }
+  ]
+      },
+      {
+        "id": "meal5",
+        "title": "3 course Pork",
+        "starter": "Lorem Ipsum",
+        "desert": "Cake",
+        "price": 39.99,
+        "labels": ["pork"],
+        "img": "https://hot-thai-kitchen.com/wp-content/uploads/2024/01/fish-sauce-pork-belly-sq.jpg",
+       "drinks": [
+    {
+      "id": "drink-1",
+      "title": "Beer",
+      "price": 4.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsbppPfSSYPlULOd2cc-TlL0DsrixKy_CSK6m6RHyaqV71xPRcs6tSrQT_4BJxc0ADf0&usqp=CAU"
+    },
+    {
+      "id": "drink-2",
+      "title": "Juice",
+      "price": 5.99,
+      "image": "https://5.imimg.com/data5/JJ/TS/EK/SELLER-61942504/juice-glass.jpg"
+    },
+    {
+      "id": "drink-3",
+      "title": "Vine",
+      "price": 6.99,
+      "image": "https://specials-images.forbesimg.com/imageserve/5d151369142c500008c78029/Zalto-Denk-Art-Bordeaux-Wine-Glass/960x0.jpg?fit=scale"
+    }
+  ]
+      },
+      {
+        "id": "meal6",
+        "title": "3 course Kids",
+        "starter": "Lorem Ipsum",
+        "desert": "Cake",
+        "price": 29.99,
+        "labels": ["kids", "breakfast"],
+        "img": "https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg",
+        "drinks": [
+    {
+      "id": "drink-1",
+      "title": "Beer",
+      "price": 4.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsbppPfSSYPlULOd2cc-TlL0DsrixKy_CSK6m6RHyaqV71xPRcs6tSrQT_4BJxc0ADf0&usqp=CAU"
+    },
+    {
+      "id": "drink-2",
+      "title": "Juice",
+      "price": 5.99,
+      "image": "https://5.imimg.com/data5/JJ/TS/EK/SELLER-61942504/juice-glass.jpg"
+    },
+    {
+      "id": "drink-3",
+      "title": "Vine",
+      "price": 6.99,
+      "image": "https://specials-images.forbesimg.com/imageserve/5d151369142c500008c78029/Zalto-Denk-Art-Bordeaux-Wine-Glass/960x0.jpg?fit=scale"
+    }
+  ]
+      },
+      {
+        "id": "meal7",
+        "title": "3 course Chicken 2",
+        "starter": "Lorem Ipsum",
+        "desert": "Cake",
+        "price": 19.99,
+        "labels": ["chicken"],
+        "img": "https://www.foodandwine.com/thmb/t9YqzGbmH-huAbV6xitCQs0-G4s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-recipes-herb-and-lemon-roasted-chicken-hero-c4ba0aec56884683be482c47b1e1df11.jpg",
+        "drinks": [
+    {
+      "id": "drink-1",
+      "title": "Beer",
+      "price": 4.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsbppPfSSYPlULOd2cc-TlL0DsrixKy_CSK6m6RHyaqV71xPRcs6tSrQT_4BJxc0ADf0&usqp=CAU"
+    },
+    {
+      "id": "drink-2",
+      "title": "Juice",
+      "price": 5.99,
+      "image": "https://5.imimg.com/data5/JJ/TS/EK/SELLER-61942504/juice-glass.jpg"
+    },
+    {
+      "id": "drink-3",
+      "title": "Vine",
+      "price": 6.99,
+      "image": "https://specials-images.forbesimg.com/imageserve/5d151369142c500008c78029/Zalto-Denk-Art-Bordeaux-Wine-Glass/960x0.jpg?fit=scale"
+    }
+  ]
+      }
+      
+    ]
+  }
+  

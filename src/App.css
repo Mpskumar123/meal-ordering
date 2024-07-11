@@ -1,0 +1,98 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.app-container {
+  background-color: lightgrey; 
+  height: 100vh; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.left-container {
+  width: 55%;
+  height: 100%;
+  padding: 10px;
+  margin-left: 40px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start; 
+  justify-content: flex-start;
+}
+
+.right-container {
+  width: 39%;
+  height: 100%;
+  padding: 10px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start; 
+  justify-content: flex-start; /* Align items at the top */
+  
+}
+
+.top-container {
+  width: calc(100% - 30px); 
+  max-width: 100%; 
+  height: 60px;
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.middle-container {
+  width: calc(100% - 30px); 
+  margin-top: 5px;
+  max-width: 100%; 
+  height: 650px;
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.selector {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.meal-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.rotate-icon {
+  transform: rotate(90deg); 
+}
