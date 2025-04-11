@@ -31,13 +31,13 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t ${IMAGE} .'
+                bat "docker build -t ${IMAGE} ."
             }
         }
 
         stage('Trivy Scan') {
             steps {
-                bat 'trivy image ${IMAGE}'
+                bat "trivy image ${IMAGE}"
             }
         }
 
