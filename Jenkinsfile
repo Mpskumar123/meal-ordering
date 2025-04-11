@@ -10,7 +10,8 @@ pipeline {
             steps {
                 //git 'https://github.com/Mpskumar123/meal-ordering'
                 //sh 'echo pass'
-                //hii this pavan
+                echo 'Checked out source code'
+                
             }
         }
 
