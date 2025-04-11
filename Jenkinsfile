@@ -24,8 +24,8 @@ pipeline {
         stage('SonarQube Code Analysis') {
             steps {
                  withSonarQubeEnv('MySonarQube') {
-                bat "${tool 'MySonarQube'}/bin/sonar-scanner -Dsonar.projectKey=meal-ordering -Dsonar.sources=src -X"
-        }
+        bat "${tool 'MySonarQube'}/bin/sonar-scanner -Dsonar.projectKey=meal-ordering -Dsonar.sources=src -Dsonar.login=squ_8791863d8fa62fb8acddbe06cf14fdd647e1f8dc -X"
+    }
             }
         }
 
