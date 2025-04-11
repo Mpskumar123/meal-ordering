@@ -31,8 +31,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat '''docker build -f "C:\\Users\\pavan\\OneDrive\\Documents\\GitHub\\meal-ordering\\Dockerfile" -t ${IMAGE} .'''
-
+                    bat ''' docker build -f Dockerfile -t %IMAGE% . '''
             }
         }
 
