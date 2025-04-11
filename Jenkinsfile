@@ -17,8 +17,12 @@ pipeline {
 
         stage('Build App') {
             steps {
-                sh 'npm install'
-                sh 'npm run build'
+                sh ''' 
+                cd meal-ordering
+                 npm install
+                 npm run build
+                 '''
+                
             }
         }
 
