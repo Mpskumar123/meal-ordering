@@ -8,12 +8,7 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Mpskumar123/meal-ordering/'
-            }
-        }
-
+        
         stage('Build App') {
             steps {
                 script {
