@@ -31,13 +31,13 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t $IMAGE .'
+                bat 'docker build -t ${IMAGE} .'
             }
         }
 
         stage('Trivy Scan') {
             steps {
-                bat 'trivy image $IMAGE'
+                bat 'trivy image ${IMAGE}'
             }
         }
 
@@ -46,7 +46,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                     bat '''
                         echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-                        docker push $IMAGE
+                        docker push ${IMAGE}
                     '''
                 }
             }
