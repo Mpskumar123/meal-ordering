@@ -12,7 +12,7 @@ pipeline {
         stage('Build App') {
             steps {
                 script {
-                    sh '''
+                    bat '''
                     
                         npm install
                         npm run build
@@ -24,27 +24,27 @@ pipeline {
         stage('SonarQube Code Analysis') {
             steps {
                 withSonarQubeEnv('MySonarQube') {
-                    sh 'sonar-scanner -Dsonar.projectKey=meal-ordering -Dsonar.sources=src'
+                    bat 'sonar-scanner -Dsonar.projectKey=meal-ordering -Dsonar.sources=src'
                 }
             }
         }
 
         stage('Docker Build') {
             steps {
-                sh 'docker build -t $IMAGE .'
+                bat 'docker build -t $IMAGE .'
             }
         }
 
         stage('Trivy Scan') {
             steps {
-                sh 'trivy image $IMAGE'
+                bat 'trivy image $IMAGE'
             }
         }
 
         stage('Docker Push') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                    sh '''
+                    bat '''
                         echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
                         docker push $IMAGE
                     '''
@@ -55,7 +55,7 @@ pipeline {
         stage('Update Deployment File and Push') {
             steps {
                 withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
-                    sh '''
+                    bat '''
                         git config --global user.email "pavansaikumar49@gmail.com"
                         git config --global user.name "Mpskumar123"
 
