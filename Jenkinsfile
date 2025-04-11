@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 //git 'https://github.com/Mpskumar123/meal-ordering'
-                sh 'echo pass'
+                //sh 'echo pass'
             }
         }
 
