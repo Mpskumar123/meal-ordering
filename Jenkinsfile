@@ -51,21 +51,22 @@ pipeline {
         stage('Update Deployment File and Push') {
             steps {
                 withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
-                    bat '''
-                        git config --global user.email "pavansaikumar49@gmail.com"
-                        git config --global user.name "Mpskumar123"
+            bat '''
+                git config --global user.email "pavansaikumar49@gmail.com"
+                git config --global user.name "Mpskumar123"
 
-                        sed -i "s|replaceImageTag|${BUILD_NUMBER}|g" k8s/deployment.yaml
-                        git add k8s/deployment.yaml
+                powershell -Command "(Get-Content k8s/deployment.yaml) -replace 'replaceImageTag', '${BUILD_NUMBER}' | Set-Content k8s/deployment.yaml"
+                git add k8s/deployment.yaml
 
-                        if ! git diff --cached --quiet; then
-                            git commit -m "Update image to ${BUILD_NUMBER}"
-                            git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
-                        else
-                            echo "No changes to commit."
-                        fi
-                    '''
-                }
+                git diff --cached --quiet
+                if %ERRORLEVEL% NEQ 0 (
+                    git commit -m "Update image to ${BUILD_NUMBER}"
+                    git push https://${GITHUB_TOKEN}@github.com/%GIT_USER_NAME%/%GIT_REPO_NAME% HEAD:main
+                ) else (
+                    echo No changes to commit.
+                )
+            '''
+        }
             }
         }
     }
