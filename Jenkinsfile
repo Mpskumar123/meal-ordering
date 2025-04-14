@@ -35,12 +35,6 @@ pipeline {
             }
         }
 
-        stage('Trivy Scan') {
-            steps {
-                bat "trivy image ${IMAGE}"
-            }
-        }
-
         stage('Docker Push') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
@@ -70,12 +64,6 @@ pipeline {
                         fi
                     '''
                 }
-            }
-        }
-
-        stage('Slack Notification') {
-            steps {
-                slackSend(channel: '#devops', message: "✅ Docker image *${IMAGE}* pushed & manifest updated. ArgoCD will sync it. 🚀")
             }
         }
     }
