@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: meal-ordering-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: meal-ordering
   ports:
